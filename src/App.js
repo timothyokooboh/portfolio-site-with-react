@@ -1,9 +1,31 @@
+import GlobalStyles from "./Globals.styled.js";
+import Navbar from "./components/navbar/Navbar";
+import { 
+  Routes,
+  Route,
+  BrowserRouter as Router
+} from "react-router-dom"
+import Home from "./components/pages/home/Home"
+import { ThemeProvider } from "styled-components";
+
+
+const theme = {
+  mobile: "950px",
+}
 
 function App() {
   return (
-    <div>
-      <h1>Timothy Okooboh</h1>
-    </div>
+    <>
+      <ThemeProvider theme={theme} >
+        <GlobalStyles />
+        <Navbar />
+        <Router>
+          <Routes>
+            <Route exact path="/" element={ <Home /> } />
+          </Routes>
+        </Router>
+      </ThemeProvider>
+    </>
   );
 }
 
