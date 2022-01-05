@@ -1,11 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from './pages/app/App';
 import reportWebVitals from './reportWebVitals';
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom"
+import { ThemeProvider } from "styled-components";
+import Home from "./pages/home/Home"
+import Works from "./pages/works/Works"
+import GlobalsStyles from "./Globals.styled.js";
+
+const theme = {
+  mobile: "950px",
+  miniMobile: '600px'
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <GlobalsStyles />
+      <Router>
+        <Routes>
+          <Route path="/" element={<App />}>
+            <Route index element={<Home />} />
+            <Route path="works" element={<Works />} />
+          </Route>
+        </Routes>
+      </Router>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

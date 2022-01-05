@@ -4,12 +4,12 @@ export const StyledAbout = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 100px;
+    margin: 30px 0;
 
     @media(max-width: ${({ theme }) => theme.mobile}) {
         flex-direction: column-reverse;
         text-align: center;
-        margin: 30px 20px;
+     
     }
 
     & > *:first-child {

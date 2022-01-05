@@ -14,7 +14,9 @@ const ProjectListItem = ({ project}) => {
                         <Button text="Read more" bgColor="#FF6464" color="#fff"></Button>
                     </div>
                     <div>
-                        <Button text="View project" bgColor="#fff" color="#FF6464"></Button>
+                        <a href={ project.url } target="_blank" rel="noreferrer">
+                            <Button text="View project" bgColor="#fff" color="#FF6464"></Button>
+                        </a>
                     </div>
                 </div>
             </div>

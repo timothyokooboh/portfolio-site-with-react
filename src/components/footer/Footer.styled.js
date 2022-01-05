@@ -10,11 +10,16 @@ export const StyledFooter = styled.footer`
     & > div {
         margin-bottom: 10px;
     }
+
+    .copy-right {
+        text-align: center;
+        font-size: 15px;
+    }
 `
 
 export const StyledFooterLink = styled.a`
     margin-left: 30px;
-    font-size: 40px;
+    font-size: 30px;
     cursor: pointer;
     color: ${({ color}) => color}};
 

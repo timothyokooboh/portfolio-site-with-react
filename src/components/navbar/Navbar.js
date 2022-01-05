@@ -1,9 +1,11 @@
 import { StyledNavbar } from './Navbar.styled';
 import { MdMenu, MdClose } from "react-icons/md";
 import Footer from '../footer/Footer';
-import { useState } from 'react';
+import { Link, useNavigate } from "react-router-dom"
 
 const Navbar = () => {
+    const navigate = useNavigate();
+
     const openMenu = () => {
         const menuDropdown = document.querySelector('#menu-close');
         
@@ -17,22 +19,29 @@ const Navbar = () => {
         menuDropdown.classList.remove("show-menu")
     }
 
+    const test = (url) => {
+        closeMenu()
+        navigate(url)
+    }
+
     return ( 
         <StyledNavbar>
-            <div>
-                <div>Works</div>
-                <div>Blog</div>
-                <div>Contact</div>
+            <div className="desktop-links">
+                <Link to="/">Timothy <br /> Okooboh </Link>
+                <div>
+                    <Link to="/works">Works</Link>
+                    <Link to="/blog">Blog</Link>
+                    <Link to="/contact">Contact</Link>
+                </div>
             </div>
-
-            
-            <MdMenu  className='menu-icon' id='menu-open' onClick={() => openMenu() } />
+    
+            <MdMenu className='menu-icon' id='menu-open' onClick={() => openMenu() } />
             <div className='mobile-menu' id='menu-close'>
                 <div> <MdClose className='menu-close' onClick={() => closeMenu() } />  </div>
                 <div>
-                    <div>Works</div>
-                    <div>Blog</div>
-                    <div>Contact</div>
+                    <div onClick={() => test('/works')}>Works</div>
+                    <div to="/blog">Blog</div>
+                    <div to="/contact">Contact</div>
                 </div>
                 <Footer color="white" />
             </div>

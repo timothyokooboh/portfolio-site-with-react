@@ -1,11 +1,6 @@
 import styled from "styled-components";
 
 export const StyledProjectList = styled.div`
-    margin: 0px 100px;
-    @media(max-width: ${({ theme }) => theme.mobile}) {
-        margin: 30px 20px;      
-    }
-
     h4 {
         color: #21243D;
         font-weight: 300;

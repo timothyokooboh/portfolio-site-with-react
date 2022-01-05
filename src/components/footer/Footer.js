@@ -32,7 +32,7 @@ const Footer = ({ color }) => {
                 }
             </div>
 
-            <div>
+            <div className='copy-right'>
                 Copyright &copy; {new Date().getFullYear()} Timothy Okooboh
             </div>
         </StyledFooter>

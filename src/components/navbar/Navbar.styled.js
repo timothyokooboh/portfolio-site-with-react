@@ -1,25 +1,41 @@
 import styled from 'styled-components';
 
 export const StyledNavbar = styled.nav`
-    padding: 10px 30px;
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 999;
-    background-color: white;
-    width: 100%;
+ position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 999;
+        background-color: white;
+        width: 100%;
 
-    & > *:first-child {
+    @media(max-width: ${({ theme }) => theme.mobile}) {
         display: flex;
-        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .desktop-links {
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+       
 
-        & > div {
+        & > *:first-child {
+            font-weight: 300;
+        }
+
+        @media(max-width: ${({ theme }) => theme.mobile}) {
+            & > *:last-child {
+                display: none;
+            }
+            /*display: none; */
+        }
+
+        a {
             margin-left: 20px;
             font-weight: 500;
             color: #000000;
             transition: color 0.2s ease-in-out;
+            text-decoration: none;
 
             &:hover {
                 color: #FF6464;
@@ -27,16 +43,17 @@ export const StyledNavbar = styled.nav`
             }
         }
 
-        @media(max-width: ${({ theme }) => theme.mobile}) {
-            display: none;
-        }
     }
+
 
     .menu-icon {
         display: none;
+        margin-right: 20px;
+        margin-top: 20px;
 
         @media(max-width: ${({ theme }) => theme.mobile}) {
             display: block;
+            margin-left: auto;
         }
     }
 
@@ -73,11 +90,10 @@ export const StyledNavbar = styled.nav`
             display: flex;
             justify-content: flex-end;
             width: 100%;
-            padding-right: 10px;
-
+           
             svg {
-                margin-right: 30px;
-                margin-top: 10px;
+                margin-right: 20px;
+                margin-top: 20px;
             }
         } 
 
@@ -89,6 +105,9 @@ export const StyledNavbar = styled.nav`
                 padding: 20px 0;
                 width: fit-content;
                 font-size: 20px;
+                display: block;
+                color: white;
+                text-decoration: none;
 
                 &:hover {
                     color: #FF6464;

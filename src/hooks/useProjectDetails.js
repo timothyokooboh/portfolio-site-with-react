@@ -20,7 +20,7 @@ const useProjectDetails = () => {
                to work with diverse Twilio and Google maps APIs.
             `,
             images: ["../eazy-cus-1.png", "../eazy-cus-2.png", "../eazy-cus-3.png"],
-            projectUrl: "https://eazyaccess-customers.web.app/#/",
+            url: "https://eazyaccess-customers.web.app/#/",
             featured: true
         },
         {
@@ -35,7 +35,7 @@ const useProjectDetails = () => {
             `,
             lessonsLearned: ` Same as the EazyAccess customers application.`,
             images: ["../eazy-ven-1.png", "../eazy-ven-2.png", "../eazy-ven-3.png"],
-            projectUrl: "https://eazyaccess-vendors.web.app/#/",
+            url: "https://eazyaccess-vendors.web.app/#/",
             featured: true
         },
 
@@ -65,7 +65,7 @@ const useProjectDetails = () => {
                 build server side rendered apps with Nuxt.js.
             `,
             images: ["../pep-1.png", "../pep-2.png", "../pep-3.png"],
-            projectUrl: "https://pepexam.herokuapp.com/",
+            url: "https://pepexam.herokuapp.com/",
             featured: false
         },
     ]
