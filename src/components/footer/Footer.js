@@ -1,7 +1,9 @@
 
 import { StyledFooter } from './Footer.styled';
 import { FaGithub, FaTwitter, FaLinkedin} from "react-icons/fa"
-const Footer = () => {
+import SocialLink from './SocialLink';
+
+const Footer = ({ color }) => {
     const socialLinks = [
         {
             link: "https://www.linkedin.com/in/timothy-okooboh-193980165/",
@@ -19,11 +21,20 @@ const Footer = () => {
             id: 3
         }
     ]
+
     return ( 
-        <StyledFooter color="white">
-            {
-               socialLinks.length && socialLinks.map(({link, icon, id}) => <a key={id} href={link} target="_blank" rel="noreferrer">{ icon }</a> )
-            }
+        <StyledFooter>
+            <div>
+                {
+                socialLinks.length && socialLinks.map(({link, icon, id}) => {
+                    return <SocialLink key={id} link={link} icon={icon} id={id} color={color} />
+                    })
+                }
+            </div>
+
+            <div>
+                Copyright &copy; {new Date().getFullYear()} Timothy Okooboh
+            </div>
         </StyledFooter>
     );
 }

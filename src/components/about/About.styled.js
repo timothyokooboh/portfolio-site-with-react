@@ -38,17 +38,6 @@ export const StyledAbout = styled.div`
                 height: 5px;
             }
         }
-
-        button {
-            margin-top: 20px;
-            background-color: #FF6464;
-            outline: none;
-            border: none;
-            color: #fff;
-            padding: 10px 15px;
-            border-radius: 2px;
-            cursor: pointer;
-        }
     }
 
     .img-container {
@@ -68,5 +57,6 @@ export const StyledAbout = styled.div`
             pointer-events: none;
         }
     }
+
 
 `

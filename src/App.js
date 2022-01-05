@@ -11,6 +11,7 @@ import { ThemeProvider } from "styled-components";
 
 const theme = {
   mobile: "950px",
+  miniMobile: '600px'
 }
 
 function App() {

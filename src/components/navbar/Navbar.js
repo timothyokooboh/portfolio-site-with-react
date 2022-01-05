@@ -1,6 +1,7 @@
 import { StyledNavbar } from './Navbar.styled';
 import { MdMenu, MdClose } from "react-icons/md";
 import Footer from '../footer/Footer';
+import { useState } from 'react';
 
 const Navbar = () => {
     const openMenu = () => {
@@ -33,7 +34,7 @@ const Navbar = () => {
                     <div>Blog</div>
                     <div>Contact</div>
                 </div>
-                <Footer />
+                <Footer color="white" />
             </div>
             
         </StyledNavbar>

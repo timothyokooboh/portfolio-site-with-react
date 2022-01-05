@@ -73,7 +73,7 @@ export const StyledNavbar = styled.nav`
             display: flex;
             justify-content: flex-end;
             width: 100%;
-            padding-right: 30px;
+            padding-right: 10px;
 
             svg {
                 margin-right: 30px;

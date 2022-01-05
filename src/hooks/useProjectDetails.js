@@ -2,8 +2,8 @@ const useProjectDetails = () => {
     const projectDetails = [
         {
             id: 1,
-            projectName: "EazyAccess (Customers)",
-            projectDescription: `An application that allows users to find and connect with service providers within and outside their location.`,
+            title: "EazyAccess (Customers)",
+            description: `An application that allows users to find and connect with service providers within and outside their location.`,
             projectPurpose: `To help bridge the gap between service providers and clients in need of these services. EazyAccess eases the process of
             getting domestic services all across the country at any place or time.`,
             projectStack: "Vue 3, Quasar, Firebase",
@@ -19,14 +19,14 @@ const useProjectDetails = () => {
                I learned how to add a voice recording feature to a chat component. I was a great opportunity
                to work with diverse Twilio and Google maps APIs.
             `,
-            images: ["pep1.PNG", "pep2.PNG", "pep3.PNG"],
+            images: ["../eazy-cus-1.png", "../eazy-cus-2.png", "../eazy-cus-3.png"],
             projectUrl: "https://eazyaccess-customers.web.app/#/",
             featured: true
         },
         {
             id: 2,
-            projectName: "EazyAccess (Vendors)",
-            projectDescription: `An application that helps service providers to find and connect with customers and sell their products.`,
+            title: "EazyAccess (Vendors)",
+            description: `An application that helps service providers to find and connect with customers and sell their products.`,
             projectPurpose: `To help bridge the gap between service providers and clients in need of these services. EazyAccess eases the process of
             getting domestic services all across the country at any place or time.`,
             projectStack: "Vue 3, Quasar, Firebase",
@@ -34,15 +34,15 @@ const useProjectDetails = () => {
                 Same as the EazyAccess customers application.
             `,
             lessonsLearned: ` Same as the EazyAccess customers application.`,
-            images: ["pep1.PNG", "pep2.PNG", "pep3.PNG"],
-            projectUrl: "https://eazyaccess-customers.web.app/#/",
+            images: ["../eazy-ven-1.png", "../eazy-ven-2.png", "../eazy-ven-3.png"],
+            projectUrl: "https://eazyaccess-vendors.web.app/#/",
             featured: true
         },
 
         {
             id: 3,
-            projectName: "PEP Exams",
-            projectDescription: `PEP Exams is a quiz application I built for Nigerian Pharmacists. 
+            title: "PEP Exams",
+            description: `A quiz application I built for Nigerian Pharmacists. 
             It contains past questions, answers and downloadable study resources required to prepare for the 
             professional licensing examination.`,
             projectPurpose: `I built this project because I like to solve real world problems
@@ -64,11 +64,12 @@ const useProjectDetails = () => {
                 I learned how to extend my knowledge of Vue.js to 
                 build server side rendered apps with Nuxt.js.
             `,
-            images: ["pep1.PNG", "pep2.PNG", "pep3.PNG"],
+            images: ["../pep-1.png", "../pep-2.png", "../pep-3.png"],
             projectUrl: "https://pepexam.herokuapp.com/",
             featured: false
         },
     ]
+
     return projectDetails;
 }
  

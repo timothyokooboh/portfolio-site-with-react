@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const StyledSkills = styled.div`
     background-color: #EDF7FA;
     padding: 30px 20px;
-    margin: 60px 100px;
+    margin: 60px 100px 30px;;
 
     @media(max-width: ${({ theme }) => theme.mobile}) {
         margin: 30px 20px;
@@ -12,6 +12,7 @@ export const StyledSkills = styled.div`
     h4 {
         margin: 0;
         color: #21243D;
+        font-weight: 300;
     }
 
     .card {
@@ -60,3 +61,4 @@ export const StyledSkills = styled.div`
         }
     }
 `
+

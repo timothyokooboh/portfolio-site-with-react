@@ -1,5 +1,6 @@
 
 import { StyledAbout } from './About.styled';
+import Button from "../button/Button";
 
 const About = () => {
     return ( 
@@ -19,7 +20,7 @@ const About = () => {
                         </a>
                     </div>
                 </div>
-                <button> Download Resume </button>
+                <Button text="Download resume" bgColor="#FF6464" color="#fff"></Button>
             </div>
             <div className='img-container'>
                 <img src="../timothy.png" alt=" timothy okoooboh" />

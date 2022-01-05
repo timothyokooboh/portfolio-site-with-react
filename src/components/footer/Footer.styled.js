@@ -3,18 +3,24 @@ import styled from "styled-components";
 export const StyledFooter = styled.footer`
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    padding: 100px 0;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
 
-    & > * {
-        margin-left: 30px;
-        font-size: 40px;
-        cursor: pointer;
-        color: ${({ color}) => color}};
-
-        &:hover {
-            color: red !important;
-            cursor: pointer;
-        }
+    & > div {
+        margin-bottom: 10px;
     }
+`
+
+export const StyledFooterLink = styled.a`
+    margin-left: 30px;
+    font-size: 40px;
+    cursor: pointer;
+    color: ${({ color}) => color}};
+
+    &:hover {
+        color: #FF6464;
+        cursor: pointer;
+   }
+    
 `

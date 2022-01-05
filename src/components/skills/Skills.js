@@ -42,7 +42,7 @@ const Skills = () => {
                     { 
                         skills.map(skill => {
                             return (
-                                <li>
+                                <li key={ skill.title }>
                                     <img src={skill.logo} alt={skill.title} />
                                     <span>{skill.title}</span>
                                 </li>
