@@ -3,7 +3,7 @@ const useProjectDetails = () => {
         {
             id: 1,
             title: "EazyAccess (Customers)",
-            description: `An application that allows users to find and connect with service providers within and outside their location.`,
+            description: `An application that helps users to find and connect with service providers within and outside their location.`,
             projectPurpose: `To help bridge the gap between service providers and clients in need of these services. EazyAccess eases the process of
             getting domestic services all across the country at any place or time.`,
             projectStack: "Vue 3, Quasar, Firebase",
@@ -42,7 +42,7 @@ const useProjectDetails = () => {
         {
             id: 3,
             title: "PEP Exams",
-            description: `A quiz application I built for Nigerian Pharmacists. 
+            description: `A quiz application for Nigerian Pharmacists. 
             It contains past questions, answers and downloadable study resources required to prepare for the 
             professional licensing examination.`,
             projectPurpose: `I built this project because I like to solve real world problems

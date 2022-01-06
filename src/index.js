@@ -7,6 +7,7 @@ import { ThemeProvider } from "styled-components";
 import Home from "./pages/home/Home"
 import Works from "./pages/works/Works"
 import GlobalsStyles from "./Globals.styled.js";
+import Blog from './pages/blog/Blog';
 
 const theme = {
   mobile: "950px",
@@ -22,6 +23,7 @@ ReactDOM.render(
           <Route path="/" element={<App />}>
             <Route index element={<Home />} />
             <Route path="works" element={<Works />} />
+            <Route path="blog" element={<Blog />} />
           </Route>
         </Routes>
       </Router>
