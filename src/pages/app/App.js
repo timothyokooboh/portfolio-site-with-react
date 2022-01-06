@@ -8,7 +8,7 @@ function App() {
   return (
     <StyledApp>
       <Navbar />
-      <div style={{ marginTop: '100px'}}>
+      <div style={{ marginTop: '100px', marginBottom: '150px'}}>
         <Outlet />
       </div>
       <Footer color="#000" />
