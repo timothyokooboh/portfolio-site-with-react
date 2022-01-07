@@ -3,14 +3,14 @@ import { ContactContainer } from "./Contact.styled";
 const Contact = () => {
     return ( 
         <ContactContainer>
-            <form name="portfolio-contact" method="POST" netlify>
+            <form name="portfolio-contact" method="POST" data-netlify="true" >
                 <div>
                     <label htmlFor="name"> Name </label>
                     <input type="text" name="name" id="name" required />
                 </div>
                 <div>
                     <label htmlFor="email"> Email </label>
-                    <input type="text" name="email" id="email"  required/>
+                    <input type="email" name="email" id="email"  required/>
                 </div>
                 <div>
                     <label htmlFor="message"> Message </label>
