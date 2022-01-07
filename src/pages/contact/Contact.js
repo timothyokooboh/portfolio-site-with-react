@@ -3,7 +3,7 @@ import { ContactContainer } from "./Contact.styled";
 const Contact = () => {
     return ( 
         <ContactContainer>
-            <form ame="portfolio-contact" netlify>
+            <form name="portfolio-contact" netlify>
                 <div>
                     <label htmlFor="name"> Name </label>
                     <input type="text" name="name" id="name" required />
