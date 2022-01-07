@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
-export const ContactContainer = styled.form`
+export const ContactContainer = styled.div`
     max-width: 500px;
     margin: auto;
 
-    & > div {
+    form > div {
         margin-bottom: 20px;
     }
 
