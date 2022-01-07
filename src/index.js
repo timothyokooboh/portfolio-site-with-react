@@ -9,6 +9,7 @@ import Works from "./pages/works/Works"
 import GlobalsStyles from "./Globals.styled.js";
 import Blog from './pages/blog/Blog';
 import Project from './pages/works/Project';
+import Contact from './pages/contact/Contact';
 
 const theme = {
   mobile: "950px",
@@ -26,6 +27,7 @@ ReactDOM.render(
             <Route path="blog" element={<Blog />} />
             <Route path="works" element={<Works />} />
             <Route path="works/:id" element={<Project />} />
+            <Route path="contact" element={<Contact />} />
           </Route>
         </Routes>
       </Router>
