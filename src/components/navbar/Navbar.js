@@ -1,7 +1,7 @@
 import { StyledNavbar } from './Navbar.styled';
 import { MdMenu, MdClose } from "react-icons/md";
 import Footer from '../footer/Footer';
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import CustomLink from './CustomLink';
 
 const Navbar = () => {

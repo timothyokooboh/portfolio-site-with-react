@@ -20,7 +20,12 @@ const About = () => {
                         </a>
                     </div>
                 </div>
-                <Button text="Download resume" bgColor="#FF6464" color="#fff"></Button>
+                <Button 
+                    bgColor="#FF6464" 
+                    color="#fff"
+                >
+                        Download resume
+                </Button>
             </div>
             <div className='img-container'>
                 <img src="../timothy.png" alt=" timothy okoooboh" />
