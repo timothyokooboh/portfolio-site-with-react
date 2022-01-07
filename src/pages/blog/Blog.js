@@ -8,7 +8,7 @@ const Blog = () => {
         <StyledBlog>
             <h1>Blog</h1>
             {
-                blogs.map(blog => <BlogItem blog={blog}></BlogItem>)
+                blogs.map(blog => <BlogItem key={blog.id} blog={blog}></BlogItem>)
             }
         </StyledBlog>
     );

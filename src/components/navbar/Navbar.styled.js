@@ -1,12 +1,13 @@
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
 
 export const StyledNavbar = styled.nav`
- position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 999;
-        background-color: white;
-        width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background-color: white;
+    width: 100%;
 
     @media(max-width: ${({ theme }) => theme.mobile}) {
         display: flex;
@@ -28,19 +29,6 @@ export const StyledNavbar = styled.nav`
                 display: none;
             }
             /*display: none; */
-        }
-
-        a {
-            margin-left: 20px;
-            font-weight: 500;
-            color: #000000;
-            transition: color 0.2s ease-in-out;
-            text-decoration: none;
-
-            &:hover {
-                color: #FF6464;
-                cursor: pointer;
-            }
         }
 
     }
@@ -79,7 +67,7 @@ export const StyledNavbar = styled.nav`
         top: 0;
         left: 0;
         color: #fff;
-        z-index: 999;
+        z-index: 999999;
         opacity: 0;
         transform: scale(0);
         display: flex;
@@ -148,4 +136,18 @@ export const StyledNavbar = styled.nav`
         }
     }
 
+`
+
+export const StyledDesktopLink = styled(Link)`
+    margin-left: 20px;
+    font-weight: 500;
+    color: ${({match}) => match ? '#FF6464' : '#000'};
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        color: #FF6464;
+        cursor: pointer;
+    }
+        
 `

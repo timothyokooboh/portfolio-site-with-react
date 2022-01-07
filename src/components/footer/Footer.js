@@ -3,7 +3,7 @@ import { StyledFooter } from './Footer.styled';
 import { FaGithub, FaTwitter, FaLinkedin} from "react-icons/fa"
 import SocialLink from './SocialLink';
 
-const Footer = ({ color }) => {
+const Footer = ({ color, bgColor }) => {
     const socialLinks = [
         {
             link: "https://www.linkedin.com/in/timothy-okooboh-193980165/",
@@ -23,8 +23,8 @@ const Footer = ({ color }) => {
     ]
 
     return ( 
-        <StyledFooter>
-            <div>
+        <StyledFooter bgColor={bgColor} >
+            <div className='links-container'>
                 {
                 socialLinks.length && socialLinks.map(({link, icon, id}) => {
                     return <SocialLink key={id} link={link} icon={icon} id={id} color={color} />

@@ -6,7 +6,7 @@ const useProjectDetails = () => {
             description: `An application that helps users to find and connect with service providers within and outside their location.`,
             projectPurpose: `To help bridge the gap between service providers and clients in need of these services. EazyAccess eases the process of
             getting domestic services all across the country at any place or time.`,
-            projectStack: "Vue 3, Quasar, Firebase",
+           stack: ["vue 3", "quasar", "firebase"],
             challenges: `
                 The major challenge I faced was trying to ensure that the chat component was robust as possible with 
                 features similar to what is available in Whatsapp and Telegram. I had to enure that the chat component 
@@ -29,7 +29,7 @@ const useProjectDetails = () => {
             description: `An application that helps service providers to find and connect with customers and sell their products.`,
             projectPurpose: `To help bridge the gap between service providers and clients in need of these services. EazyAccess eases the process of
             getting domestic services all across the country at any place or time.`,
-            projectStack: "Vue 3, Quasar, Firebase",
+           stack: ["vue 3", "quasar", "firebase"],
             challenges: `
                 Same as the EazyAccess customers application.
             `,
@@ -49,7 +49,7 @@ const useProjectDetails = () => {
             with my code.
             By the way, I am also a Pharmacist 😇. So I saw it as an opportunity to give back to the pharmacy profession.
             It was also an opportunity to practice the things I have learned in Nuxt.js. So this was the first project I built with Nuxt.js`,
-            projectStack: "Nuxt.js, Node/Express.js, MongoDB",
+           stack: ["nuxt.js", "Node/Express.js", "MongoDB"],
             challenges: `
                 One of the challenges I faced was how to store and persist sensitive user's data without utilizing web storage e.g local storage.
                 For example, I wanted to store data regarding whether a user has made payment or not. I knew that if I saved that information in web storage,

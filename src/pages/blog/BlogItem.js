@@ -8,7 +8,7 @@ const BlogItem = ({ blog }) => {
                 <div>
                     <span className="date">{ blog.datePublished }</span>
                     {
-                        blog.tags.map(tag => <span class="tag"> { tag }</span>)
+                        blog.tags.map(tag => <span key={tag} className="tag"> { tag }</span>)
                     }
                 </div>
                 <div className="description">{ blog.description }</div>

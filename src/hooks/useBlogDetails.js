@@ -1,6 +1,7 @@
 const useBlogDetails = () => {
     const blogs = [
         {
+            id: 1,
             title: "How to maintain atomic design principles when using vendor components",
             description: "In this article, I shared insights on how to maintain atomic design principles when using one or more vendor components.",
             tags: ["vue", "atomic design", "vendor components"],
@@ -8,6 +9,7 @@ const useBlogDetails = () => {
             datePublished: "Apr 21, 2021"
         },
         {
+            id: 2,
             title: "Vuex best practices",
             description: "I shared best practices for using Vuex mutations, actions, and custom vuex plugins.",
             tags: ["vue", "vuex", "state management"],
@@ -15,6 +17,7 @@ const useBlogDetails = () => {
             datePublished: "Apr 14, 2021"
         },
         {
+            id: 3,
             title: "Vue 3: Debugging composable functions",
             description: "I wrote about possible bugs that could arise when using the composition API and how to resolve them.",
             tags: ["vue", "vue 3", "composition api"],
@@ -22,6 +25,7 @@ const useBlogDetails = () => {
             datePublished: "March 28, 2021"
         },
         {
+            id: 4,
             title: "5 CSS principles you probably did not know about",
             description: "I shared 5 useful CSS properties that would be helpful to every Frontend engineer.",
             tags: ["css", "styling"],
@@ -29,6 +33,7 @@ const useBlogDetails = () => {
             datePublished: "Sep 19, 2020"
         },
         {
+            id: 5,
             title: "How to become a better Vue.js developer",
             description: "I wrote about various ways of leveling up as a Vue.js engineer.",
             tags: ["vue", "watchers"],
@@ -36,6 +41,7 @@ const useBlogDetails = () => {
             datePublished: "July 9, 2020"
         },
         {
+            id: 6,
             title: "Understanding watchers in Vue.js",
             description: "I explained what watchers are in Vue.js and how to watch arrays and objects.",
             tags: ["vue", "watchers"],
