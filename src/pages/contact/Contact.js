@@ -15,13 +15,12 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        let myForm = document.getElementById('contact');
-        let formData = new FormData(myForm)
+        let data = { name, email, message };
         
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...formData })
+            body: encode({ "form-name": "contact", ...data})
         })
         .then((res) => res.json())
         .then((data) => console.log(data))
@@ -29,7 +28,7 @@ const Contact = () => {
 
     return ( 
         <ContactContainer>
-            <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contact" >
+            <form onSubmit={handleSubmit} name="contact">
                 <div>
                     <label for="name"> Name </label>
                    <input type="text" name="name" id="name" required value={name} onInput={(e) => setName(e.target.value)} />
