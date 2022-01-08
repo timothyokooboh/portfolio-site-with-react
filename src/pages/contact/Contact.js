@@ -23,7 +23,7 @@ const Contact = () => {
 
     return ( 
         <ContactContainer>
-            <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="contact" >
+            <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden id="contact" >
                 <div>
                     <label for="name"> Name </label>
                    <input type="text" name="name" id="name" required value={name} onInput={(e) => setName(e.target.value)} />
