@@ -5,6 +5,12 @@ const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+    }
     
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -15,7 +21,7 @@ const Contact = () => {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString()
+            body: encode({ "form-name": "contact", ...formData })
         })
         .then((res) => res.json())
         .then((data) => console.log(data))
