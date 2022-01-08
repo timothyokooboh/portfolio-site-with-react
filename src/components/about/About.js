@@ -1,8 +1,14 @@
 
 import { StyledAbout } from './About.styled';
-import Button from "../button/Button";
+import CvDownloadButton from './CvDownloadButton';
 
 const About = () => {
+
+    const handleClick = (id) => {
+        const cv = document.querySelector(id);
+        cv.click();
+    }
+
     return ( 
         <StyledAbout>
             <div>
@@ -20,12 +26,8 @@ const About = () => {
                         </a>
                     </div>
                 </div>
-                <Button 
-                    bgColor="#FF6464" 
-                    color="#fff"
-                >
-                        Download resume
-                </Button>
+
+                <CvDownloadButton downloadCV={handleClick}></CvDownloadButton>
             </div>
             <div className='img-container'>
                 <img src="../timothy.png" alt=" timothy okoooboh" />
