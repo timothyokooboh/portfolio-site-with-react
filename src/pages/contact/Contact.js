@@ -1,8 +1,13 @@
 import { ContactContainer } from "./Contact.styled";
+import { useState } from "react";
 
 const Contact = () => {
+    const [isPending, setIsPending] = useState(false);
+
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        setIsPending(true);
 
         const form = document.getElementById("form");
         const data = new FormData(form);
@@ -12,7 +17,11 @@ const Contact = () => {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(data).toString()
         })
-        .then(() => alert("Message sent successfully!"))
+        .then(() => {
+            setIsPending(false);
+            form.reset();
+            alert("Thank you for your message. I will get back to you as soon as possible.");
+        })
     }
     
     return ( 
@@ -33,7 +42,7 @@ const Contact = () => {
                    <textarea name="message" id="message" required onInput={(e) => e.target.value } ></textarea>
                 </div>
 
-                <button type="submit">Send</button>
+                <button type="submit">{ isPending ? 'Sending...' : 'Send'}</button>
             </form>
     </ContactContainer>
     );
