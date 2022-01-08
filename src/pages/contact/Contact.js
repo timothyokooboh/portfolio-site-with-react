@@ -23,7 +23,7 @@ const Contact = () => {
 
     return ( 
         <ContactContainer>
-            <form name="contact" method="POST" data-netlify="true" id="contact" >
+            <form action="https://www.timothyokooboh.com" name="contact" method="POST" data-netlify="true" id="contact" >
                 <div>
                     <label for="name"> Name </label>
                    { /*} <input type="text" name="name" id="name" required value={name} onInput={(e) => setName(e.target.value)} /> */ }
