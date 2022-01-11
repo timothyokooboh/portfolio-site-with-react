@@ -30,8 +30,11 @@ export const ContactContainer = styled.div`
         outline: none;
         padding: 5px 10px;
         border-radius: 3px;
-        border: none;
-        background-color: #eee;
+        border: 1px solid #ccc;
+
+        &:focus {
+            border-color: dodgerblue;
+        }
     }
 
     button {

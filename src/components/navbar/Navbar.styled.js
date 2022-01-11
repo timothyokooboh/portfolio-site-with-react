@@ -139,7 +139,6 @@ export const StyledNavbar = styled.nav`
 `
 
 export const StyledDesktopLink = styled(Link)`
-    margin-left: 20px;
     font-weight: 500;
     color: ${({match}) => match ? '#FF6464' : '#000'};
     transition: color 0.2s ease-in-out;
