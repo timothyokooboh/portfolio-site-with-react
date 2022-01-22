@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const ProjectListItem = ({ project}) => {
     const navigate = useNavigate();
     return ( 
-        <div key={ project.id } className="project-item" >
+        <div className="project-item" >
             <StyledProjectImage image={ project.images[0] } > </StyledProjectImage> 
         
             <div className="project-content">
