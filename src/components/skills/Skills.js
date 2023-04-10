@@ -2,36 +2,57 @@ import { StyledSkills } from "./Skills.styled"
 const Skills = () => {
     const skills = [
         {
-            title: 'javascript',
-            logo: '../js-logo.png'
-        },
-        {
-            title: 'typsecript',
+            title: 'Typsecript',
             logo: '../ts-logo.png'
         },
         {
-            title: 'vue',
+            title: 'Vue.js',
             logo: '../vue-logo.png'
         },
         {
-            title: 'nuxt',
+            title: 'React.js',
+            logo: '../react-logo.png'
+        },
+        {
+            title: 'Nuxt.js',
             logo: '../nuxt-logo.png'
         },
         {
-            title: 'quasar',
-            logo: '../quasar-logo.png'
+            title: 'Next.js',
+            logo: '../next-logo.png'
         },
         {
-            title: 'firebase',
+            title: 'Pinia',
+            logo: '../pinia-logo.svg'
+        },
+        {
+            title: 'Vuex',
+            logo: '../vue-logo.png'
+        },
+        {
+            title: 'Redux',
+            logo: '../redux-logo.png'
+        },
+       
+        {
+            title: 'Firebase',
             logo: '../firebase-logo.png'
         },
         {
-            title: 'html',
+            title: 'HTML',
             logo: '../html-logo.png'
         },
         {
-            title: 'css',
+            title: 'CSS',
             logo: '../css-logo.png'
+        },
+        {
+            title: 'SCSS',
+            logo: '../scss-logo.png'
+        },
+        {
+            title: 'Chakra-ui',
+            logo: '../chakra-logo.png'
         }
     ]
     return ( 

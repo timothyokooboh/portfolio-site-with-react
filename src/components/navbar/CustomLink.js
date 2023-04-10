@@ -1,7 +1,7 @@
 import { useMatch, useResolvedPath } from "react-router-dom";
 import { StyledDesktopLink } from "./Navbar.styled";
 
-const CustomLink = ({ children, to }) => {
+const CustomLink = ({ children, to, style }) => {
     const resolvedPath = useResolvedPath(to);
     const match = useMatch({ path: resolvedPath.pathname, end: true });
 
@@ -9,6 +9,7 @@ const CustomLink = ({ children, to }) => {
         <StyledDesktopLink
             to={to}
             match={match}
+            {...style}
         > 
             { children } 
         </StyledDesktopLink>

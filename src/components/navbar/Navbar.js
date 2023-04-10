@@ -32,8 +32,12 @@ const Navbar = () => {
                     <span style={{fontWeight: 'bold'}}>Timothy <br /> Okooboh</span>
                 </CustomLink>
                 <div>
-                    <CustomLink to="/works">Works</CustomLink>
-                    <CustomLink to="/blog">Blog</CustomLink>
+                    <CustomLink to="/projects">
+                        <span className='link'>Projects</span>
+                    </CustomLink>
+                    <CustomLink to="/articles">
+                        <span className='link'>Articles</span>
+                    </CustomLink>
                     <CustomLink to="/contact">Contact</CustomLink>
                 </div>
             </div>
@@ -42,8 +46,8 @@ const Navbar = () => {
             <div className='mobile-menu' id='menu-close'>
                 <div> <MdClose className='menu-close' onClick={() => closeMenu() } />  </div>
                 <div>
-                    <div onClick={() => handleClick('/works')}>Works</div>
-                    <div onClick={() => handleClick('/blog')}>Blog</div>
+                    <div onClick={() => handleClick('/projects')}>Projects</div>
+                    <div onClick={() => handleClick('/articles')}>Articles</div>
                     <div onClick={() => handleClick('/contact')}>Contact</div>
                 </div>
                 <Footer color="white" />

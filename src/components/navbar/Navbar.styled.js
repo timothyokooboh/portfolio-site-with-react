@@ -28,7 +28,6 @@ export const StyledNavbar = styled.nav`
             & > *:last-child {
                 display: none;
             }
-            /*display: none; */
         }
 
     }
@@ -143,11 +142,14 @@ export const StyledDesktopLink = styled(Link)`
     color: ${({match}) => match ? '#FF6464' : '#000'};
     transition: color 0.2s ease-in-out;
     text-decoration: none;
-    margin-right: 10px;
 
     &:hover {
         color: #FF6464;
         cursor: pointer;
+    }
+
+    .link {
+        margin-right: 25px;
     }
         
 `

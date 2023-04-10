@@ -34,7 +34,6 @@ export const StyledSkills = styled.div`
                 
                 display: flex;
                 align-items: center;
-                text-transform: capitalize;
                 margin: 0 20px 25px;
                 
                 img {
