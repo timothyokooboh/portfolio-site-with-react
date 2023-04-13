@@ -12,15 +12,14 @@ const About = () => {
     return ( 
         <StyledAbout>
             <div>
-                <h1>
-                    Hi, I am Timothy, <br></br>
-                    Frontend Engineer
-                </h1>
+                <h1>Hi, I am Timothy Okooboh</h1>
+                <h2>Frontend Engineer & Technical Writer</h2>
+                
                 <div className='description'>
                     <div> I am a self-taught frontend developer with a passion for solving real-world problems. </div>
                     <div> I love to create beautiful and functional web applications.</div>
                     <div>
-                        <span> I am currently working as a Frontend Engineer at </span>
+                        <span> I currently work as a Frontend Engineer at </span>
                         <a href='https://seamlesshr.com/' target="_blank" rel="noreferrer">
                             SeamlessHR
                         </a>

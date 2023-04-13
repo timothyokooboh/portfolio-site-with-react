@@ -17,6 +17,14 @@ export const StyledAbout = styled.div`
         h1 {
             color: #21243D;
             font-weight: bold;
+            margin-block: 0
+        }
+
+        h2 {
+            color: #21243D;
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 20px;
         }
 
         .description {
