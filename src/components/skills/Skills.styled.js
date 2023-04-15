@@ -4,6 +4,7 @@ export const StyledSkills = styled.div`
   background-color: #edf7fa;
   padding: 30px 20px;
   margin: 60px 0 30px;
+  animation: slideUp 0.3s ease-out;
 
   .main-skills {
     margin-bottom: 30px;
@@ -59,6 +60,17 @@ export const StyledSkills = styled.div`
             height: 30px;
           }
         }
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: none;
       }
     }
   }
