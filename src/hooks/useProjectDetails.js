@@ -4,7 +4,7 @@ const useProjectDetails = () => {
       id: 1,
       title: "Myllo",
       description: `A reading list management and note taking app. Every public resource that is added by users 
-        automatically become available for other users to read, like and add to their own reading list`,
+        automatically become available for other users to read, like and add to their own reading list.`,
       purpose: `Myllo helps users to add resources to their reading list, know the ones they have read, will read or currently reading.
                 Users can also take notes of their thoughts or things they learned while reading a learning resource`,
       stack: ["TypeScript", "React.js", "Chakra-ui", "firebase"],
@@ -20,17 +20,18 @@ const useProjectDetails = () => {
     },
     {
       id: 2,
-      title: "Myllo Google Chrome Extension",
-      description: `An application that helps service providers to find and connect with customers and sell their products.`,
-      purpose: `To help bridge the gap between service providers and clients in need of these services. EazyAccess eases the process of
-            getting domestic services all across the country at any place or time.`,
-      stack: ["vue 3", "quasar", "firebase"],
+      title: "Myllo (Google Chrome Extension)",
+      description: `A chrome extension that enables users to seamlessly add resources to their reading list.`,
+      purpose: `To improve the user experience for users of Myllo web app. The extension helps users to conveniently add learning 
+        resources to their reading list on Myllo app.`,
+      stack: ["JavaScript", "Firebase"],
       challenges: `
-                Same as the EazyAccess customers application.
+                It was challenging to implement authentication for the Chrome extension. I overcame this challenge by 
+                using the window.postMessage browser API to transmit authentication related data from the app to the extension.
             `,
-      lessonsLearned: ` Same as the EazyAccess customers application.`,
-      images: ["../eazy-ven-1.png", "../eazy-ven-2.png", "../eazy-ven-3.png"],
-      url: "https://eazyaccess-vendors.web.app/#/",
+      lessonsLearned: `I learned how to build a chrome extension. I learned how to sync a chrome extension with a web app and share data across both platforms.`,
+      images: ["../myllo-ext.png", "../myllo-ext-2.png", "../myllo-ext.png"],
+      url: "https://chrome.google.com/webstore/detail/myllo/laiikohnmoedcgdblfiflihgbiahjgfg",
       featured: false,
     },
     {
@@ -39,7 +40,7 @@ const useProjectDetails = () => {
       description: `An application that helps users to find and connect with service providers within and outside their location.`,
       purpose: `To help bridge the gap between service providers and clients in need of these services. EazyAccess eases the process of
             getting domestic services all across the country at any place or time.`,
-      stack: ["vue 3", "quasar", "firebase"],
+      stack: ["Vue 3", "Quasar", "Firebase"],
       challenges: `
                 The major challenge I faced was trying to ensure that the chat component was robust as possible with 
                 features similar to what is available in Whatsapp and Telegram. I had to enure that the chat component 
@@ -62,7 +63,7 @@ const useProjectDetails = () => {
       description: `An application that helps service providers to find and connect with customers and sell their products.`,
       purpose: `To help bridge the gap between service providers and clients in need of these services. EazyAccess eases the process of
             getting domestic services all across the country at any place or time.`,
-      stack: ["vue 3", "quasar", "firebase"],
+      stack: ["Vue 3", "Quasar", "Firebase"],
       challenges: `
                 Same as the EazyAccess customers application.
             `,

@@ -9,13 +9,20 @@ export const ProjectContainer = styled.div`
     object-position: left top;
   }
 
+  .tag {
+    color: #999;
+    font-style: italic;
+  }
+
   .project-img {
     width: 100%;
     height: 45vh;
   }
 
   .description,
-  purpose {
+  .challenges,
+  .purpose__content,
+  .lessons-learned__content {
     max-width: 75ch;
   }
 
