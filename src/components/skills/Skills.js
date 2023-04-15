@@ -7,7 +7,7 @@ const Skills = () => {
     <Fragment>
       <StyledSkills>
         <section className="main-skills">
-          <h4 className="heading">The Main Technologies I Use</h4>
+          <h4 className="heading">Core skills</h4>
           <div className="card">
             <ul>
               {mainSkills.map((skill) => {
@@ -23,7 +23,7 @@ const Skills = () => {
         </section>
 
         <section>
-          <h4 className="heading">Other Technologies</h4>
+          <h4 className="heading">Supplementary skills</h4>
           <div className="card">
             <ul>
               {otherSkills.map((skill) => {

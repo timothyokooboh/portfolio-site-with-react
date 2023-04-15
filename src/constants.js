@@ -20,6 +20,10 @@ export const mainSkills = [
     logo: "../css-logo.png",
   },
   {
+    title: "SCSS",
+    logo: "../scss-logo.png",
+  },
+  {
     title: "Chakra-ui",
     logo: "../chakra-logo.png",
   },
@@ -56,7 +60,7 @@ export const otherSkills = [
     logo: "../firebase-logo.png",
   },
   {
-    title: "SCSS",
-    logo: "../scss-logo.png",
+    title: "Google Chrome Extensions",
+    logo: "../chrome-ext.png",
   },
 ];
