@@ -6,6 +6,10 @@ export const StyledProjectList = styled.div`
     font-weight: 300;
   }
 
+  .project-in-view {
+    animation: slideDown 0.5s ease-out;
+  }
+
   .project-item {
     margin-bottom: 50px;
     padding-bottom: 10px;
@@ -16,10 +20,6 @@ export const StyledProjectList = styled.div`
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
       grid-template-columns: 1fr;
-    }
-
-    &:hover {
-      cursor: pointer;
     }
 
     .project-content {

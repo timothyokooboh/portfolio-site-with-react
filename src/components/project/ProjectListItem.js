@@ -1,11 +1,19 @@
 import { StyledProjectImage } from "./ProjectList.styled";
 import Button from "../button/Button";
 import { useNavigate } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
 
 const ProjectListItem = ({ project }) => {
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+
   const navigate = useNavigate();
+  let classes = ["project-item", inView ? "project-in-view" : ""];
+
   return (
-    <div className="project-item">
+    <div className={classes.join(" ")} ref={ref}>
       <StyledProjectImage>
         <img src={project.images[0]} />
       </StyledProjectImage>
