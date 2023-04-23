@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-
 export default createGlobalStyle`
 
     *, *::before, *::after {
@@ -13,6 +12,10 @@ export default createGlobalStyle`
         box-sizing: border-box;
         font-size: 16px;
         font-family: 'Heebo', sans-serif;
+    }
+
+    .cursor-pointer {
+        cursor: pointer
     }
 
     .flex {
@@ -39,4 +42,4 @@ export default createGlobalStyle`
     .ml-lg {
         margin-left: 40px;
     }
-`
+`;

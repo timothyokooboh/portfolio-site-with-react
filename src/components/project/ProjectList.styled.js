@@ -7,7 +7,7 @@ export const StyledProjectList = styled.div`
   }
 
   .project-in-view {
-    animation: slideDown 0.5s ease-out;
+    animation: slideDown 0.5s forwards ease-out;
   }
 
   .project-item {
@@ -39,10 +39,63 @@ export const StyledProjectList = styled.div`
 `;
 
 export const StyledProjectImage = styled.div`
+  position: relative;
+
+  &:hover .image-preview {
+    opacity: 1;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
   img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     object-position: left top;
+    transition: a 0.3s;
+  }
+
+  .image-preview {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+
+    color: #ffffff;
+    transition: 0.3s;
+
+    &__text {
+      font-size: 14px;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+  }
+
+  .preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+  }
+
+  .close-preview {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    padding-block: 15px;
+    padding-inline: 25px;
+    position: fixed;
+    top: -20px;
+    right: 10px;
+    z-index: 9999;
   }
 `;

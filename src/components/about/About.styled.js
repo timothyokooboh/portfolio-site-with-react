@@ -62,7 +62,7 @@ export const StyledAbout = styled.div`
     background-color: #edf7fa;
     padding-bottom: 15px;
     padding-left: 5px;
-    animation: slideLeft 0.3s 0.6s both ease-out;
+    animation: slideDown 0.3s 0.6s both ease-out;
 
     img {
       object-fit: cover;
